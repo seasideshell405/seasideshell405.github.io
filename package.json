@@ -1,0 +1,16 @@
+{
+  "name": "myweb-githubio",
+  "version": "1.0.0",
+  "description": "个人静态网站 - 项目介绍、教程文档、博客",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "start": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  },
+  "dependencies": {
+    "swup": "^4.9.0"
+  }
+}
