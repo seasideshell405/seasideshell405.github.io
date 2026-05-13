@@ -254,25 +254,25 @@ body {
 
 .site-main {
   flex: 1;
-  padding: 40px 0 80px;
+  padding: 40px 0 48vh;
 }
 
 @media (min-width: 640px) {
   .site-main {
-    padding: 56px 0 96px;
+    padding: 56px 0 40vh;
   }
 }
 
 /* ---- 页面切换过渡 ---- */
 .transition-fade {
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.35s ease, transform 0.35s ease;
   opacity: 1;
   transform: translateY(0);
 }
 
 html.is-animating .transition-fade {
   opacity: 0;
-  transform: translateY(8px);
+  transform: translateY(14px);
 }
 
 /* ============================================
