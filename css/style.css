@@ -254,12 +254,14 @@ body {
 
 .site-main {
   flex: 1;
-  padding: 40px 0 48vh;
+  min-height: calc(100vh - 52px);
+  padding: 40px 0 80px;
 }
 
 @media (min-width: 640px) {
   .site-main {
-    padding: 56px 0 40vh;
+    min-height: calc(100vh - 52px);
+    padding: 56px 0 96px;
   }
 }
 
