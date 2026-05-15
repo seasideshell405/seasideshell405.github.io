@@ -114,6 +114,10 @@ body {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--c-border);
+  transition: transform 0.3s ease;
+}
+.site-header.header-hidden {
+  transform: translateY(-100%);
 }
 
 .site-header .container {

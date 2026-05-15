@@ -78,5 +78,38 @@
       });
     })();
   </script>
+  <script>
+    (function () {
+      var header = document.querySelector('.site-header');
+      if (!header) return;
+      var lastScroll = window.pageYOffset || 0;
+      var threshold = 30;
+
+      window.addEventListener('scroll', function () {
+        var scrollY = window.pageYOffset || 0;
+        // 只在手机端生效
+        if (window.innerWidth >= 640) {
+          header.classList.remove('header-hidden');
+          lastScroll = scrollY;
+          return;
+        }
+
+        // 滚动距离太小不处理
+        if (Math.abs(scrollY - lastScroll) < threshold) return;
+
+        // 菜单开着时不隐藏
+        if (document.querySelector('.site-nav.nav-open')) return;
+
+        if (scrollY > lastScroll && scrollY > 100) {
+          // 下滑 → 隐藏
+          header.classList.add('header-hidden');
+        } else {
+          // 上滑 → 显示
+          header.classList.remove('header-hidden');
+        }
+        lastScroll = scrollY;
+      }, { passive: true });
+    })();
+  </script>
 </body>
 </html>
