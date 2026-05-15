@@ -10,13 +10,13 @@ title: 随记
 {% if collections.posts.length > 0 %}
 <div class="card-grid">
 {% for post in collections.posts %}
-  <div class="card">
-    <h3 class="card-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-    {% if post.data.description %}
-    <p class="card-desc">{{ post.data.description }}</p>
-    {% endif %}
-    <span class="card-meta">{{ post.date | formatDate }}</span>
-  </div>
+<a class="card" href="{{ post.url }}">
+  <h3 class="card-title">{{ post.data.title }}</h3>
+  {% if post.data.description %}
+  <p class="card-desc">{{ post.data.description }}</p>
+  {% endif %}
+  <div class="card-meta">{{ post.date | formatDate }}</div>
+</a>
 {% endfor %}
 </div>
 {% else %}

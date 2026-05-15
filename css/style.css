@@ -460,6 +460,10 @@ blockquote {
   color: var(--c-text);
 }
 
+.card[data-href] {
+  cursor: pointer;
+}
+
 .card-title {
   font-family: var(--font-serif);
   font-size: 1.05rem;

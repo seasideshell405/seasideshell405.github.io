@@ -10,13 +10,13 @@ title: 教程
 {% if collections.tutorials.length > 0 %}
 <div class="card-grid">
 {% for tutorial in collections.tutorials %}
-  <div class="card">
-    <h3 class="card-title"><a href="{{ tutorial.url }}">{{ tutorial.data.title }}</a></h3>
-    {% if tutorial.data.description %}
-    <p class="card-desc">{{ tutorial.data.description }}</p>
-    {% endif %}
-    <span class="card-meta">{{ tutorial.date | formatDate }}</span>
-  </div>
+<a class="card" href="{{ tutorial.url }}">
+  <h3 class="card-title">{{ tutorial.data.title }}</h3>
+  {% if tutorial.data.description %}
+  <p class="card-desc">{{ tutorial.data.description }}</p>
+  {% endif %}
+  <div class="card-meta">{{ tutorial.date | formatDate }}</div>
+</a>
 {% endfor %}
 </div>
 {% else %}

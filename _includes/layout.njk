@@ -54,6 +54,27 @@
   </script>
   <script>
     (function () {
+      function handleCardClick(event) {
+        var card = event.target.closest('.card[data-href]');
+        if (!card) return;
+        if (event.target.closest('a')) return;
+
+        var href = card.getAttribute('data-href');
+        var target = card.getAttribute('data-href-target');
+        if (!href) return;
+
+        if (target === '_self') {
+          window.location.href = href;
+        } else {
+          window.open(href, target || '_blank', 'noopener');
+        }
+      }
+
+      document.addEventListener('click', handleCardClick);
+    })();
+  </script>
+  <script>
+    (function () {
       var btn = document.querySelector('.nav-toggle');
       var nav = document.querySelector('.site-nav');
       if (!btn || !nav) return;
