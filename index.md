@@ -11,15 +11,17 @@ title: 首页
 
 ## 关于我
 
-喜欢折腾的技术爱好者，主要使用 AI 编程，写些有意思的项目。AI 可以天马行空，但标准我来定。用 AI 加速产出，但代码质量和风格规范不能让步。先跑起来，再打磨到满意。
+喜欢折腾的技术爱好者，主要使用 AI 编程，写些有意思的项目。
+
+> 备注：用 AI 加速产出，但代码质量和风格规范不让步。
 
 ### 技术栈
 
 誓做 AI 时代最会偷懒的开发者。AI 会的我全都要蹭上。
 
-- **Conversations**：DeepSeek、Claude Code
-- **Languages**：Go、TypeScript、Python
-- **Tools**：VS Code、Docker、Git、Linux
+- **AI model**：DeepSeek
+- **Languages**：Python、C++、Java
+- **Tools**：Claude Code、Docker、Git、Linux
 
 ### 联系我
 
