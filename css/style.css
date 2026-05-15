@@ -28,10 +28,9 @@
 }
 
 /* 桌面端内容区比例缩放 */
-@media (min-width: 1024px) {
+@media (min-width: 640px) {
   .container {
     width: 75%;
-    max-width: 1800px;
   }
 }
 
