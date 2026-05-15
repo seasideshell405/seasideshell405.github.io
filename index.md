@@ -4,7 +4,7 @@ title: 首页
 ---
 
 <div class="hero">
-  <img class="avatar" src="https://github.com/seasideshell405.png" alt="SeasideShell 头像" width="80" height="80">
+  <img class="avatar" src="http://119.29.152.144/images/avatar.webp" alt="SeasideShell 头像" width="80" height="80">
   <h1>你好，我是 SeasideShell</h1>
   <p>一名热爱折腾的开发者。这里是我写字的地方，记录项目、整理教程、偶尔写写随记。</p>
 </div>
