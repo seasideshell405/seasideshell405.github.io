@@ -41,7 +41,7 @@ Eleventy 静态网站，托管于 GitHub Pages。
 ## 构建 & 预览
 
 - 构建：`npm run build`
-- 预览地址：http://119.29.152.144
+- 本地预览：`npm run serve`
 
 ## 工作流程
 
