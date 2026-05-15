@@ -14,7 +14,11 @@ date: 2026-05-15
 
 雪山素女，顾名思义：雪山上着素衣的女子。白发，蓝眼，汉服，蓝色外衣，宽袖长袖，毛边袖口，发簪流苏。这是能看到的描述。但真正让人记住的，大概是那种清冷又隐忍的气质——身在困厄之中，却神智清明，暗自筹谋。
 
+![雪山素女-1](https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/0cf2b717-4ea8-4130-af89-259ee8147eeb/original=true/112039604.jpeg)
+
 落花入梦为这个角色写了文言小说，也做了 AI 绘画的 LoRA 模型。说起来有点特别：一个诞生于现代 AI 技术的角色，却被赋予了古典的文学灵魂。文言小说的笔法有几分明清笔记的味道，写素女处缧绁之中，"虽遭荼毒而灵台不昧"，寥寥几句，一个柔中带刚的形象就立住了。
+
+![雪山素女-2](https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/091a6686-405d-4549-809e-f82b16c03381/original=true/112039603.jpeg)
 
 我喜欢这种跨界的创作方式。
 
@@ -23,3 +27,7 @@ date: 2026-05-15
 说到底，创作的本质从来没有变过：心里有一个形象，想让她被看见。
 
 不管用的是笔、是颜料、还是算法。
+
+![雪山素女-3](https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/298d2a10-c1b7-4491-b89d-e58e9ad4f251/width=525/298d2a10-c1b7-4491-b89d-e58e9ad4f251.jpeg)
+
+![雪山素女-4](https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/40741b43-2bf5-42ca-930f-52f80baab74a/original=true/112039606.jpeg)
