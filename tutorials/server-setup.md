@@ -70,13 +70,13 @@ export http_proxy=http://127.0.0.1:7890
 
 支持微信、QQ、飞书等多种方式与 Claude Code 对话。让 Claude Code 帮你安装配置即可。
 
-GitHub：https://github.com/seasideshell405/Weixin_Worker
+GitHub：https://github.com/chenhg5/cc-connect
 
 ### HappyCoder
 
 另一个远程控制工具，需要安装配套 App 使用。同样让 Claude Code 去装就行。
 
-GitHub：https://github.com/seasideshell405/HappyCoder
+GitHub：https://github.com/slopus/happy
 
 配置完成后，你在地铁上、咖啡厅、甚至躺在床上，发条消息就能让服务器干活。
 
