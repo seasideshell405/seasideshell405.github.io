@@ -1,7 +1,7 @@
 ---
 layout: layout.njk
-title: 雪山素女
-description: 落花入梦笔下的原创角色
+title: 推荐漫画《雪山素女》
+description: 落花入梦笔下的漫画角色，古典与 AI 结合的跨界创作
 tags: post
 date: 2026-05-15
 ---
