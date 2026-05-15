@@ -1,0 +1,86 @@
+---
+layout: layout.njk
+title: 用 Claude Code 远程控制你的服务器
+date: 2026-05-15
+tags: ["tutorial"]
+description: 从零搭建远程 Claude Code 工作流：配置服务器、安装 Claude Code，并用手机远程给它下达指令干活。
+---
+
+# 用 Claude Code 远程控制你的服务器
+
+你有没有想过，在手机上下达一个指令，服务器就开始自动写代码、改配置、部署网站？这套流程搭起来并不复杂。
+
+核心链路很简单：**服务器 24 小时在线运行 Claude Code → 通过远程工具接入 → 你在任何地方下发指令**。
+
+## 1. 服务器基础配置
+
+首先你需要一台服务器。拿到手之后建议先装宝塔面板方便管理：
+
+参考：[宝塔面板 Linux 安装教程](https://www.bt.cn/bbs/thread-19376-1-1.html)
+
+然后创建一个普通用户并赋予 sudo 权限：
+
+```bash
+adduser shell
+usermod -aG sudo shell
+```
+
+**关键一步**：配置 sudo 免密码，否则 Claude Code 在执行需要提权的命令时会卡住：
+
+```bash
+echo "shell ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/shell
+```
+
+## 2. 安装 Claude Code
+
+在服务器上全局安装：
+
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+装好后进入你的项目目录（比如网站项目），运行 `claude` 即可启动。Claude Code 可以直接读写文件、执行命令、操作 git，等于给服务器装了一个 AI 大脑。
+
+## 3. 解决网络问题（可选）
+
+如果服务器在国内，访问 GitHub、npm 等可能会超时。装一个 Clash 代理来破局：
+
+参考：[clash-for-linux](https://github.com/wnlen/clash-for-linux)
+
+配置好代理后在终端启用：
+
+```bash
+export https_proxy=http://127.0.0.1:7890
+export http_proxy=http://127.0.0.1:7890
+```
+
+## 4. 远程接入 Claude Code
+
+这是最关键的一环——怎么在外面给服务器上的 Claude Code 下指令？目前有两种方案：
+
+### cc-connect
+
+通过微信公众号与 Claude Code 对话，发一条消息过去，服务器就开始干活。配置方式参见：
+
+```bash
+cat ~/Weixin_Worker/CC_CONNECT.md
+```
+
+### HappyCoder
+
+另一个远程控制工具，提供类似的能力。选一个你觉得顺手的就行。
+
+配置完成后，你在地铁上、咖啡厅、甚至躺在床上，发条消息就能让服务器干活。
+
+## 5. 实际能做什么？
+
+这套链路搭好后，你可以远程做很多事情：
+
+- **写博客**：口述主题，服务器上的 Claude Code 生成文章并提交
+- **维护网站**：改样式、修 bug、加功能
+- **运行脚本**：数据备份、日志分析、定时任务
+- **学习实验**：随时让服务器帮你跑代码验证想法
+
+## 总结
+
+一台服务器 + Claude Code + 远程接入工具 = 一个 7×24 小时听你指挥的 AI 开发助手。这套组合拳打下来，编程这件事就不再限于你面前的那台电脑了。
