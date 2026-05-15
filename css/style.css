@@ -27,13 +27,6 @@
   --content-width: 680px;
 }
 
-/* 桌面端内容区比例缩放 */
-@media (min-width: 640px) {
-  .container {
-    width: 75%;
-  }
-}
-
 /* 暗色主题 — 深暖炭 / 奶油白字 / 砖红 */
 @media (prefers-color-scheme: dark) {
   :root {
@@ -99,6 +92,14 @@ body {
   max-width: var(--content-width);
   margin: 0 auto;
   padding: 0 20px;
+}
+
+/* 桌面端：60% 占比 */
+@media (min-width: 1024px) {
+  .container {
+    width: 60%;
+    max-width: none;
+  }
 }
 
 /* ============================================
