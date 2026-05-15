@@ -18,5 +18,4 @@ npm run build    # 构建到 _site/
 
 ## 部署
 
-- 服务器：`http://119.29.152.144`
 - GitHub Pages：`https://seasideshell405.github.io/`
