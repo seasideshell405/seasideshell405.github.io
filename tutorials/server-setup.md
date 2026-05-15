@@ -18,12 +18,14 @@ description: 从零搭建远程 Claude Code 工作流：配置服务器、安装
 
 参考：[宝塔面板 Linux 安装教程](https://www.bt.cn/bbs/thread-19376-1-1.html)
 
-然后创建一个普通用户并赋予 sudo 权限：
+然后创建一个普通用户并赋予 sudo 权限（不同系统命令略有差异，以 Debian/Ubuntu 为例）：
 
 ```bash
 adduser shell
 usermod -aG sudo shell
 ```
+
+CentOS/RHEL 系使用 `useradd` 和 `wheel` 组，命令稍有不同，不确定的话直接交给 Claude Code 处理。
 
 **关键一步**：配置 sudo 免密码，否则 Claude Code 在执行需要提权的命令时会卡住：
 
@@ -38,6 +40,10 @@ echo "shell ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/shell
 ```bash
 npm install -g @anthropic-ai/claude-code
 ```
+
+参考文档：
+- [Claude Code 快速开始](https://claude-zh.cn/guide/getting-started)
+- [DeepSeek Claude Code 集成指南](https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/claude_code)
 
 装好后进入你的项目目录（比如网站项目），运行 `claude` 即可启动。Claude Code 可以直接读写文件、执行命令、操作 git，等于给服务器装了一个 AI 大脑。
 
@@ -54,21 +60,23 @@ export https_proxy=http://127.0.0.1:7890
 export http_proxy=http://127.0.0.1:7890
 ```
 
+不知道怎么做？直接问 Claude Code，它能帮你完成整个 Clash 的安装配置。
+
 ## 4. 远程接入 Claude Code
 
 这是最关键的一环——怎么在外面给服务器上的 Claude Code 下指令？目前有两种方案：
 
 ### cc-connect
 
-通过微信公众号与 Claude Code 对话，发一条消息过去，服务器就开始干活。配置方式参见：
+支持微信、QQ、飞书等多种方式与 Claude Code 对话。让 Claude Code 帮你安装配置即可。
 
-```bash
-cat ~/Weixin_Worker/CC_CONNECT.md
-```
+GitHub：https://github.com/seasideshell405/Weixin_Worker
 
 ### HappyCoder
 
-另一个远程控制工具，提供类似的能力。选一个你觉得顺手的就行。
+另一个远程控制工具，需要安装配套 App 使用。同样让 Claude Code 去装就行。
+
+GitHub：https://github.com/seasideshell405/HappyCoder
 
 配置完成后，你在地铁上、咖啡厅、甚至躺在床上，发条消息就能让服务器干活。
 
