@@ -2,5 +2,6 @@ _site/
 node_modules/
 .DS_Store
 .claude/
-images/
+images/*.webp
+!images/.gallery
 _raw_images/
