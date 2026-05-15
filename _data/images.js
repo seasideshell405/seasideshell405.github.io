@@ -16,6 +16,6 @@ module.exports = () => {
   return selected.map((f) => {
     const fp = path.join(dir, f);
     const sizeKB = fs.existsSync(fp) ? Math.round(fs.statSync(fp).size / 1024) : 0;
-    return { file: f, url: `http://119.29.152.144/images/${f}`, size: `${sizeKB}KB` };
+    return { file: f, url: `/images/${f}`, size: `${sizeKB}KB` };
   });
 };
