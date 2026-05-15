@@ -4,7 +4,7 @@
 
 ## 技术栈
 
-- [Eleventy](https://www.11ty.dev/) — 静态站点生成器
+- Eleventy — 静态站点生成器
 - Nunjucks — 模板引擎
 - CSS 自定义属性 — 亮暗双主题
 - Swup — 页面切换过渡动画
@@ -18,4 +18,4 @@ npm run build    # 构建到 _site/
 
 ## 部署
 
-- GitHub Pages：`https://seasideshell405.github.io/`
+- [GitHub Pages](https://seasideshell405.github.io/)
