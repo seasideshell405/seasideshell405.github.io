@@ -1,6 +1,7 @@
 module.exports = function (eleventyConfig) {
   // 静态资源直接复制到输出目录
   eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy(".nojekyll");
   eleventyConfig.addPassthroughCopy({ "node_modules/swup/dist/Swup.umd.js": "js/swup.js" });
 
