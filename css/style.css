@@ -27,6 +27,14 @@
   --content-width: 680px;
 }
 
+/* 桌面端内容区比例缩放 */
+@media (min-width: 1024px) {
+  .container {
+    width: 75%;
+    max-width: 1800px;
+  }
+}
+
 /* 暗色主题 — 深暖炭 / 奶油白字 / 砖红 */
 @media (prefers-color-scheme: dark) {
   :root {
@@ -600,14 +608,8 @@ blockquote {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(max(200px, calc((100% - 36px) / 4)), 1fr));
   gap: 12px;
-}
-
-@media (min-width: 640px) {
-  .gallery-grid {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 .gallery-item {
@@ -633,12 +635,6 @@ blockquote {
   object-fit: cover;
   border-radius: 4px;
   display: block;
-}
-
-@media (min-width: 640px) {
-  .gallery-item img {
-    height: 220px;
-  }
 }
 
 .gallery-label {
