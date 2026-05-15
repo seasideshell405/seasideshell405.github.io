@@ -25,8 +25,6 @@ adduser shell
 usermod -aG sudo shell
 ```
 
-CentOS/RHEL 系使用 `useradd` 和 `wheel` 组，命令稍有不同，不确定的话直接交给 Claude Code 处理。
-
 **关键一步**：配置 sudo 免密码，否则 Claude Code 在执行需要提权的命令时会卡住：
 
 ```bash
