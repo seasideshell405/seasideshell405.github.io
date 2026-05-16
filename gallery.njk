@@ -6,14 +6,13 @@ description: 精选图片展示
 
 <div class="gallery">
 
-  <h1>画廊</h1>
+  <h1>🖼️ 画廊</h1>
 
   {% if images.length > 0 %}
   <div class="gallery-grid">
   {% for img in images %}
     <a href="{{ img.url }}" target="_blank" class="gallery-item">
       <img src="{{ img.url }}" alt="{{ img.file }}" loading="lazy">
-      <span class="gallery-label">{{ img.file }}（{{ img.size }}）</span>
     </a>
   {% endfor %}
   </div>
