@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "个人静态网站 - 项目介绍、教程文档、博客",
   "scripts": {
-    "build": "eleventy",
+    "build": "eleventy && pagefind",
     "serve": "eleventy --serve",
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "pagefind": "pagefind"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "pagefind": "^1.5.2"
   },
   "dependencies": {
     "swup": "^4.9.0"

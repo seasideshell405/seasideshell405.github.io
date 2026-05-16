@@ -1,0 +1,21 @@
+# Pagefind 配置
+site: _site
+
+# 要索引的文件类型
+selectors:
+  body:
+    - article
+    - main
+    - .container
+
+# 排除的元素
+exclude_selectors:
+  - nav
+  - header
+  - footer
+  - .site-header
+  - .site-footer
+  - .site-nav
+
+# 元数据字段
+force_language: zh
