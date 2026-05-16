@@ -4,6 +4,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy(".nojekyll");
   eleventyConfig.addPassthroughCopy({ "node_modules/swup/dist/Swup.umd.js": "js/swup.js" });
+  eleventyConfig.addPassthroughCopy("js");
 
   // 全局数据
   eleventyConfig.addGlobalData("year", new Date().getFullYear());
